@@ -1,0 +1,21 @@
+name: Feature request
+description: Suggest an improvement or new capability for AEC IFC Viewer.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task or problem, not only the feature.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help?
+      description: How you'd like the app to handle it.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Other details
+      description: Workarounds you use today, examples from other tools, screenshots.

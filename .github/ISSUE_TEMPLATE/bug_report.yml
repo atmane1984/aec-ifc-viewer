@@ -1,0 +1,44 @@
+name: Bug report
+description: Something in AEC IFC Viewer doesn't work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues are public. Don't attach confidential model files or personal information.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. ...
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Settings > Apps > Installed apps > AEC IFC Viewer > Advanced options.
+      placeholder: 1.0.0.0
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows version
+      description: Run `winver` to see it.
+      placeholder: Windows 11 24H2
+  - type: textarea
+    id: model
+    attributes:
+      label: Model details
+      description: IFC schema (IFC2x3, IFC4...), approximate file size, and the authoring tool if known. Attach a model only if you are allowed to make it public.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or other details
